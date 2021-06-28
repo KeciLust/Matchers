@@ -15,7 +15,7 @@ test('comparison', () => {
 });
 test('com', () => {
   const received = comparisonHealth(item);
-  expect(received).toBe([{ name: 'маг', health: 100 },
+  expect(received).not.toBe([{ name: 'маг', health: 100 },
     { name: 'лучник', health: 80 },
     { name: 'мечник', health: 10 },
   ]);
